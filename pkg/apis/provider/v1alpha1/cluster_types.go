@@ -21,9 +21,10 @@ type Cluster struct {
 }
 
 type ClusterCalico struct {
-	CIDR   int    `json:"cidr" yaml:"cidr"`
-	MTU    int    `json:"mtu" yaml:"mtu"`
-	Subnet string `json:"subnet" yaml:"subnet"`
+	CIDR     int    `json:"cidr" yaml:"cidr"`
+	Ipv4ipip string `json:"ipv4ipip" yaml:"ipv4ipip"`
+	MTU      int    `json:"mtu" yaml:"mtu"`
+	Subnet   string `json:"subnet" yaml:"subnet"`
 }
 
 type ClusterCustomer struct {
